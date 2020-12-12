@@ -12,7 +12,7 @@ body {
     height: 100%;
     /*overflow: hidden;*/
     text-size-adjust: 100px;
-
+    
 }
 
 .display-menu {
@@ -30,12 +30,12 @@ body {
 }
 
 .navbar {
-    padding: 20px;
-    margin-top: 20px; 
+    padding: 25px 50px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     overflow: hidden;
+    margin-top: 80px;
     font-size: xx-small;
 }
 
@@ -44,6 +44,7 @@ body {
     display: block;
     color: #fff;
     text-align: center;
+    padding: 5px 20px;
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
@@ -256,7 +257,7 @@ h2{
     border-color: white;
     background-color: #142840;
     float: left;
-    width: 33.33%;
+    width: 33.33%;  
     clear: both;
     display: table;
 }
@@ -270,7 +271,7 @@ h2{
     border-color: white;
     background-color: #142840;
     float: right;
-    width: 33.33%;
+    width: 33.33%;  
     clear: both;
     display: table;
 }
@@ -285,7 +286,7 @@ h2{
     border-color: white;
     background-color: #142840;
     float: left;
-    width: 33.33%;
+    width: 33.33%;  
     clear: both;
     display: table;
     margin-bottom: 50px;
@@ -351,7 +352,7 @@ h2{
     margin-top: 25px;
     transition: .2s;
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 600; 
     text-decoration: none;
     font-size: x-large;
 }
@@ -452,7 +453,7 @@ a{
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
   }
-
+  
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
