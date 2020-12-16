@@ -552,4 +552,19 @@ Cz X1 TopBar
   .sec01 p{
     font-family: 'Carrois Gothic SC';
   }
-  
+.float-button{
+        width: auto;
+        display: table;
+        border: 1px solid #fff;
+        padding: 10px 20px;
+        border-radius: 20px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+        margin-top: 25px;
+        transition: .2s;
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        font-size: large;
+        float: left;
+}
