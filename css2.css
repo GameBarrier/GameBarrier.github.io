@@ -184,7 +184,7 @@ h2{
     border-style: solid;
     border-color: #fff;
 }
-
+BP
 .box-1 {
     display: flex;
     justify-content: space-around;
@@ -480,3 +480,76 @@ a{
 p{
     font-size: x-large;
 }
+/*
+Cz X1 TopBar
+*/
+.head {
+    z-index: 2;
+    background-color: #142840;
+    display: grid;
+    grid-template-columns: 10vw 35vw 55vw;
+    align-items: center;
+    position: absolute;
+  }
+  .headTitle {
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+  }
+  .logo {
+    height: 70px;
+    margin-left: auto;
+  }
+  .menuIcon {
+    height: 30px;
+    margin-left: 20px;
+    transition: 0.2s;
+  }
+  .menuIcon:active {
+    transform: rotateZ(90deg);
+  }
+  
+  .menuBar {
+    z-index: 1;
+    background-color: #142840;
+    padding: 10px;
+    transition: 0.5s;
+    position: absolute;
+    width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    .menuBar {
+      visibility: hidden;
+    }
+  }
+  
+  .button{
+    margin: auto;
+  }
+  .menuBar button {
+    background-color: #222;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    margin-right: 5px;
+  }
+  
+  .sec01 {
+    display: flex;
+  }
+  .sec01 img{
+    width: 100%;
+    filter: brightness(60%);
+  }
+  .sec01 div {
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 20px;
+    z-index: 1;
+  }
+  .sec01 p{
+    font-family: 'Carrois Gothic SC';
+  }
+  
