@@ -1,4 +1,4 @@
-/*var visible = false;
+var visible = false;
 
 function menu() {
   if (visible == false) {
@@ -14,7 +14,7 @@ function menu() {
     document.querySelector(".menuBar").style.visibility = "hidden";
   }
 }
-*/
+
 $(function () {
   materialRipple();
 });
