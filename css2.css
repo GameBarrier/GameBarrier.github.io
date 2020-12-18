@@ -177,73 +177,73 @@ h2{
 
 
 .pic {
-    width: 448px;
-    height: 187px;
-    box-shadow: 0 5px 36px 0px rgba(0, 0, 0, .3);
-    border-radius: 3px;
-    border-style: solid;
-    border-color: #fff;
+  width: 448px;
+  height: 187px;
+  box-shadow: 0 5px 36px 0px rgba(0, 0, 0, .3);
+  border-radius: 3px;
+  border-style: solid;
+  border-color: #fff;
 }
-BP
+
 .box-1 {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .img-box {
-    width: 50%;
-    height: 202px;
-    /* background-color: pink; */
+  width: 50%;
+  height: 202px;
+  /* background-color: pink; */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-box {
-    width: 50%;
-    display: flex;
-    justify-content: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
 }
 
 .txt {
-    width: 80%;
-    height: auto;
-    flex-wrap: wrap;
-    overflow-x: hidden;
+  width: 80%;
+  height: auto;
+  flex-wrap: wrap;
+  overflow-x: hidden;
 
-    /* background-color: violet; */
+  /* background-color: violet; */
 }
 
 .box-2 {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row-reverse;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
 }
 
 .img-box-2 {
-    width: 50%;
-    height: 202px;
-    /* background-color: purple; */
+  width: 50%;
+  height: 202px;
+  /* background-color: purple; */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box-3 {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .img-box-3 {
-    width: 50%;
-    height: 202px;
-    /* background-color: yellow; */
+  width: 50%;
+  height: 202px;
+  /* background-color: yellow; */
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .marsc{
     margin-left: 140px;
@@ -658,7 +658,7 @@ Cz X1 TopBar
     height: 3.5em;
     width: 3.5em;
     border-radius: 50%;
-    background: #2196F3;
+    background: #EDBAA2;
     color: #FFFFFF;
     position: relative;
     overflow: hidden;
@@ -683,10 +683,10 @@ Cz X1 TopBar
     -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
   }
   #root {
-    background: #ffffff;
+    background: #FF551A;
   }
   #fence {
-    background: #43A047;
+    background: #ffffff;
   }
   #root > span {
     background: url(http://edher.in/img/ic_add_48px.svg);
