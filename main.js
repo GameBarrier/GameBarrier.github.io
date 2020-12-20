@@ -58,6 +58,3 @@ function SetCookie(name,value,expires,path,domain,secure) {
   ((domain) ? "; domain=" + domain : "") +
   ((secure) ? "; secure" : "");
   }
-  console.SetCookie {
-    value = "Start"
-  }
