@@ -9,7 +9,10 @@ body {
   margin: 0;
   border: 0;
 }
-
+body {
+  padding: 0;
+  margin: 0;
+}
 h1 {
   font-family: 'PT Sans';
   color: #fff;
@@ -20,31 +23,57 @@ h2 {
   color: #fff;
   margin: 0;
 }
+h3 {
+  color: #fff;
+  font-family: "PT Sans";
+  display: flex;
+  align-self: center;
+
+}
 p {
   color: #fff;
   font-family: 'PT Sans';
   font-size: 16px;
 }
-
+button {
+  transform: translateY(0);
+  cursor: pointer;
+  transition: 0.1s;
+}
+button:active {
+  transform: translateY(2px);
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+}
+.cookie {
+  position: absolute;
+  z-index: 2;
+}
 .head {
   z-index: 2;
   background-color: #222;
-  display: grid;
-  grid-template-columns: 10vw 35vw 55vw;
+  display: flex;
+  flex-direction: row;
   align-items: center;
   position: absolute;
+  width: 100%;
 }
 .headTitle {
-  margin-left: 10px;
+  margin-right: auto;
 }
 .logo {
   height: 70px;
   margin-left: auto;
+  margin-right: 10px;
 }
 .menuIcon {
   height: 30px;
-  margin-left: 20px;
   transition: 0.2s;
+  margin-left: 20px;
+  position: absolute;
 }
 .menuIcon:active {
   transform: rotateZ(90deg);
@@ -52,9 +81,9 @@ p {
 
 .menuBar {
   z-index: 1;
-  padding: 10px;
   transition: 0.5s;
   position: absolute;
+  margin: 10px;
 }
 @media screen and (max-width: 500px) {
   .menuBar {
@@ -62,9 +91,6 @@ p {
   }
 }
 
-.button{
-  margin: auto;
-}
 .menuBar button {
   background-color: #222;
   border: none;
@@ -96,7 +122,7 @@ p {
   font-size: 30px;
 }
 .sec01 video {
-  width: 100vw;
+ width: 100%;
 }
 .sec02 {
   position: static;
@@ -129,6 +155,56 @@ p {
   height: 40px;
   margin-left: 40px;
 }
+.sec03 h2 {
+  padding-bottom: 4px;
+}
+.sec03 a {
+  padding: 0;
+  margin: 0;
+}
 #ytlogo {
   height: 60px;
+  padding-top: 3px;
+}
+#dclogo {
+  padding-top: 5px;
+}
+#ttlogo {
+  padding-top: 3px;
+}
+iframe {
+  width: 50vw;
+  display: inline-block;
+  height: 500px;
+  padding: 10px;
+}
+.sec04 {
+  background:
+    -webkit-linear-gradient(148deg, hsla(15.43, 67.74%, 30.39%, 1) 0%, hsla(15.43, 67.74%, 30.39%, 0) 65%),
+    -webkit-linear-gradient(59deg, hsla(15.46, 100%, 55.1%, 1) 0%, hsla(15.46, 100%, 55.1%, 0) 65%),
+    -webkit-linear-gradient(244deg, hsla(180.71, 0%, 5.1%, 1) 0%, hsla(180.71, 0%, 5.1%, 0) 65%),
+    -webkit-linear-gradient(246deg, hsla(15.43, 67.74%, 30.39%, 1) 0%, hsla(15.43, 67.74%, 30.39%, 0) 65%),
+    -webkit-linear-gradient(2deg, hsla(15.46, 100%, 55.1%, 1) 0%, hsla(15.46, 100%, 55.1%, 0) 65%);
+    display: flex;
+    flex-direction: column;
+}
+.sec04 h2 {
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  font-size: 30px;
+}
+.sec04 p {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 20px;
+}
+.sec04 {
+  width: 100%;
+}
+.sec04 img{
+  width: 80%;
+  align-self: center;
+}
+.sec04Desc p{
+  margin: 10px;
 }
