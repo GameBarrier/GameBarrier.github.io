@@ -9,11 +9,6 @@ body {
   margin: 0;
   border: 0;
 }
-
-body {
-  padding: 0;
-  margin: 0;
-}
 h1 {
   font-family: 'PT Sans';
   color: #fff;
@@ -48,6 +43,7 @@ button:focus {
   outline: none;
 }
 button:hover {
+  cursor: pointer;
 }
 .cookie {
   position: absolute;
@@ -79,7 +75,9 @@ button:hover {
 .menuIcon:active {
   transform: rotateZ(90deg);
 }
-
+.menuIcon:hover {
+  cursor: pointer;
+}
 .menuBar {
   z-index: 1;
   transition: 0.5s;
@@ -91,7 +89,6 @@ button:hover {
     visibility: hidden;
   }
 }
-
 .menuBar button {
   background-color: #222;
   border: none;
@@ -102,30 +99,30 @@ button:hover {
   font-size: 10px;
   margin-right: 5px;
 }
-
-.sec01 {
+.Banner {
   display: flex;
 }
-.sec01 div {
+.Banner div {
   position: absolute;
   align-self: flex-end;
   z-index: 1;
   width: 100%;
   text-align: center;
 }
-.sec01 p{
+.Banner p{
   font-family: 'Carrois Gothic SC';
 }
-.sec01 div {
+.Banner div {
   background-color: rgba(0, 0, 0, 0.5)
 }
-.sec01 h1 {
+.Banner h1 {
   font-size: 30px;
 }
-.sec01 video {
+.Banner video {
  width: 100%;
+ box-shadow: #000 0px 0px 40px;
 }
-.sec02 {
+.About {
   position: static;
   z-index: 1;
   padding: 40px;
@@ -134,44 +131,45 @@ button:hover {
   background-image: url(https://i.imgur.com/phowO4g.png);
   background-size: cover;
   background-position: center;
+  box-shadow: #000 0px 0px 40px;
 }
-.sec02 button {
+.About button {
   background-color: #fff;
   border: none;
   border-radius: 20px;
   height: 30px;
   width: 80px;
 }
-.sec03 {
+.followUs {
   background-color: #222;
+  display: flex;
 }
-.sec03 div {
-  padding-left: 40px;
+.followUs div {
   display: flex;
   align-items: center;
   margin: auto;
-  width: 570px;
 }
-.sec03 img {
+.followUs img {
   height: 40px;
-  margin-left: 40px;
 }
-.sec03 h2 {
+.followUs h2 {
   padding-bottom: 4px;
 }
-.sec03 a {
+.followUs a {
   padding: 0;
   margin: 0;
 }
 #ytlogo {
   height: 60px;
   padding-top: 3px;
+  margin-left: 40px;
 }
 #dclogo {
   padding-top: 5px;
 }
 #ttlogo {
   padding-top: 3px;
+  margin-left: 46px;
 }
 iframe {
   width: 50vw;
@@ -179,33 +177,55 @@ iframe {
   height: 500px;
   padding: 10px;
 }
-.sec04 {
-  background:
-    -webkit-linear-gradient(148deg, hsla(15.43, 67.74%, 30.39%, 1) 0%, hsla(15.43, 67.74%, 30.39%, 0) 65%),
-    -webkit-linear-gradient(59deg, hsla(15.46, 100%, 55.1%, 1) 0%, hsla(15.46, 100%, 55.1%, 0) 65%),
-    -webkit-linear-gradient(244deg, hsla(180.71, 0%, 5.1%, 1) 0%, hsla(180.71, 0%, 5.1%, 0) 65%),
-    -webkit-linear-gradient(246deg, hsla(15.43, 67.74%, 30.39%, 1) 0%, hsla(15.43, 67.74%, 30.39%, 0) 65%),
-    -webkit-linear-gradient(2deg, hsla(15.46, 100%, 55.1%, 1) 0%, hsla(15.46, 100%, 55.1%, 0) 65%);
+.FanArt {
+    background-image: url("https://i.imgur.com/2iYbYin.jpg");
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
-.sec04 h2 {
+.FanArt h2 {
   text-align: center;
-  padding: 20px 0px 0px 0px;
+  padding: 40px 0px 0px 0px;
   font-size: 30px;
 }
-.sec04 p {
+.FanArt p {
   text-align: center;
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
-.sec04 {
+.faImg {
   width: 100%;
+  display: flex;
 }
-.sec04 img{
-  width: 80%;
-  align-self: center;
+.faImg img{
+  width: 350px;
+  margin: auto;
+  box-shadow: #000 0 0 40px;
 }
-.sec04Desc p{
+.FanArtDesc p{
   margin: 10px;
+  margin-bottom: 30px;
+}
+#faArrow {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#faArrow img {
+  width: 25px;
+  box-shadow: none;
+  background-color: rgba(0,0,0,0.4);
+  padding: 5px;
+  transition: 0.1s;
+}
+#faArrow img:hover {
+  background-color: rgba(0,0,0,1);
+  cursor: pointer;
+}
+.faArrowLeft {
+  transform: translateX(calc(50vw - 250px));
+}
+.faArrowRight {
+  transform: translateX(calc(-50vw + 250px));
 }

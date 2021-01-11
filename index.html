@@ -22,13 +22,32 @@
       <button type="button" name="SocialMedia"><h2>Social Media</h2></button>
     </div>
     <div class="body">
-      <section class="sec01">
+      <section class="Banner">
         <div>
           <h1>Welcome to Game Barrier!</h1>
         </div>
         <video autoplay loop src="headvid.mp4"></video>
       </section>
-      <section class="sec02">
+      <section class="FanArt">
+        <div class="">
+            <h2 id="faTitle">Fan Art</h2>
+            <p>Placeholder here</p>
+        </div>
+        <div class="faImg">
+          <div class="faArrowLeft" id="faArrow">
+            <img src="arrowL.png" alt="" onclick="nextImageL()">
+          </div>
+          <img src="fanArt/01.jpg" alt="" id="fa01">
+          <img src="fanArt/02.png" alt="" id="fa02">
+          <div class="faArrowRight" id="faArrow">
+            <img src="arrowR.png" alt="" onclick="nextImageR()">
+          </div>
+        </div>
+        <div class="FanArtDesc">
+          <p>Made by Meii</p>
+        </div>
+      </section>
+      <section class="About">
         <h2>About us</h2>
         <p>Game Barrier is a small team of indie developers located all around the world.<br>Our aim is to create fun and unique games, which everyone can enjoy.</p>
         <br>
@@ -36,9 +55,8 @@
           Projects
         </button>
       </section>
-      <section class="sec03">
+      <section class="followUs">
         <div class="sec03Div">
-          <h2>Follow us:</h2>
           <a href="https://bit.ly/gamebarrierdiscord">
             <img src="Discord-Logo.png" alt="Discord Logo" id="dclogo">
           </a>
@@ -50,16 +68,7 @@
           </a>
         </div>
       </section>
-      <section class="sec04">
-        <div class="">
-            <h2>Fan Art</h2>
-            <p>Placeholder here</p>
-        </div>
-        <img src="ph.jpg" alt="">
-        <div class="sec04Desc">
-          <p>Made by Meii</p>
-        </div>
-      </section>
     </div>
   </body>
+<script src="javaScript/slsh.js"></script>
 </html>
