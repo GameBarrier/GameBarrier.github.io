@@ -45,9 +45,13 @@ button:focus {
 button:hover {
   cursor: pointer;
 }
-.cookie {
+#chromeOnly {
+  visibility: visible;
   position: absolute;
-  z-index: 2;
+  z-index: 0;
+  margin-top: 80px;
+  margin-left: 15px;
+  font-size: 13px;
 }
 .head {
   z-index: 2;

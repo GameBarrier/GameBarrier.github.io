@@ -27,7 +27,12 @@
         <div>
           <h1>Welcome to Game Barrier!</h1>
         </div>
-        <video autoplay loop src="banner.webm"></video>
+        <video id="bannerVideo" muted autoplay plays-inline loop poster="assets/img/myVideo.jpg">
+          <source type="video/mp4" src="vids/banner.mp4"/>
+          <source type="video/webm" src="vids/banner.webm" />
+          <source type="video/mp4" src="vids/banner.m4v" />
+          <source type="video/ogg" src="vids/banner.ogv" />
+        </video>
       </section>
       <section class="FanArt">
         <div>
@@ -69,7 +74,7 @@
           </a>
         </div>
       </section>
-      <p id="Version">Version: 0.0.3 | Performance Update</p>
+      <p id="Version">Version: 0.0.4 | Problems with the banner-video when using the Google Chrome browser are fixed.</p>
     </div>
   </body>
 <script src="javaScript/slsh.js"></script>
