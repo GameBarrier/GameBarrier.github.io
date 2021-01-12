@@ -123,6 +123,7 @@ button:hover {
   font-size: 30px;
 }
 .Banner video {
+  margin-top: 70px;
  width: 100%;
  box-shadow: #000 0px 0px 40px;
 }
