@@ -23,7 +23,7 @@ function nextImageL() {
     im02.style.visibility = "visible";
     im02.style.position = "static";
     console.log("yes02");
-    document.getElementById("faCredit").innerHTML = "Made by Meii.";
+    document.getElementById("faCredit").innerHTML = "Made by Meii";
   }
 }
 
