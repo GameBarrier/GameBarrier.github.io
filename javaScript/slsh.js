@@ -1,54 +1,57 @@
-var im01 = document.getElementById("fa01");
-var im02 = document.getElementById("fa02");
-var maxImg = 1;
-var curImg = 0;
+var img01 = document.getElementById("fa01");
+var img02 = document.getElementById("fa02");
+var img03 = document.getElementById("fa03");
 
-function nextImageL() {
+var imgs = [img01, img02, img03];
+var imgIndex = 0;
+var imgLenght = 2;
 
-  if (curImg == maxImg) {
-    curImg = 0;
+function countIndex(direc) {
+  if (direc == 0) {
+    if (imgIndex == 0) {
+      imgIndex = imgLenght;
+    } else {
+      imgIndex--;
+    }
+    alert(imgIndex);
   } else {
-    curImg = 1;
-  }
-  if (curImg == 0) {
-    im02.style.visibility = "hidden";
-    im02.style.position = "absolute";
-    im01.style.visibility = "visible";
-    im01.style.position = "static";
-    document.getElementById("faCredit").innerHTML = "Made by baronu3 (https://www.instagram.com/baronu3/)";
-  }
-  if (curImg == 1) {
-    im01.style.visibility = "hidden";
-    im01.style.position = "absolute";
-    im02.style.visibility = "visible";
-    im02.style.position = "static";
-    console.log("yes02");
-    document.getElementById("faCredit").innerHTML = "Made by Meii";
+    if (imgIndex == imgLenght) {
+      imgIndex = 0;
+    } else {
+      imgIndex++;
+    }
+    alert(imgIndex);
   }
 }
 
-function nextImageR() {
-
-  if (curImg == 0) {
-    curImg = maxImg;
-  } else {
-    curImg = curImg - 1;
-  }
-  if (curImg == 0) {
-    im02.style.visibility = "hidden";
-    im02.style.position = "absolute";
-    im01.style.visibility = "visible";
-    im01.style.position = "static";
-    document.getElementById("faCredit").innerHTML = "Made by baronu3 (https://www.instagram.com/baronu3/)";
-  }
-  if (curImg == 1) {
-    im01.style.visibility = "hidden";
-    im01.style.position = "absolute";
-    im02.style.visibility = "visible";
-    im02.style.position = "static";
-    console.log("yes02");
-    document.getElementById("faCredit").innerHTML = "Made by Meii";
+function imgL() {
+  alert("L");
+  countIndex(0);
+  for (var i = 0; i <= imgLenght; i++) {
+    if (i != imgIndex) {
+      imgs[i].visibility = "hidden";
+      imgs[i].position = "absolute";
+      alert("hidden");
+    } else {
+      imgs[i].visibility = "visible";
+      imgs[i].position = "static";
+      alert("visible");
+    }
   }
 }
 
-nextImageL();
+function imgR() {
+  alert("R");
+  countIndex(1);
+  for (var i = 0; i <= imgLenght; i++) {
+    if (i != imgIndex) {
+      imgs[i].visibility = "hidden";
+      imgs[i].position = "absolute";
+      alert("hidden");
+    } else {
+      imgs[i].visibility = "visible";
+      imgs[i].position = "static";
+      alert("visible");
+    }
+  }
+}
