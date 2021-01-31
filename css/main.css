@@ -33,7 +33,7 @@ p {
 }
 button {
   transform: translateY(0);
-  cursor: pointer;
+  cursor: no-drop;
   transition: 0.1s;
 }
 button:active {
@@ -43,7 +43,7 @@ button:focus {
   outline: none;
 }
 button:hover {
-  cursor: pointer;
+  cursor: no-drop;
 }
 #chromeOnly {
   visibility: visible;
