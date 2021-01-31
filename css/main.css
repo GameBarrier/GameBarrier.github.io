@@ -209,6 +209,9 @@ iframe {
   margin: auto;
   box-shadow: #000 0 0 40px;
 }
+.fanArtImg {
+  visibility: hidden;
+}
 .FanArtDesc p{
   margin: 10px;
   margin-bottom: 30px;
