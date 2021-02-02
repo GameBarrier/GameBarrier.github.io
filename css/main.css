@@ -122,6 +122,11 @@ button:hover {
 .Banner h1 {
   font-size: 30px;
 }
+@media only screen and (max-width: 500px) {
+  .Banner h1 {
+    font-size: 20px;
+  }
+}
 .Banner video {
   margin-top: 70px;
  width: 100%;
@@ -132,7 +137,7 @@ button:hover {
   z-index: 1;
   padding: 40px;
   padding-left: 40px;
-  padding-right: 200px;
+  padding-right: 40px;
   background-image: url(https://i.imgur.com/phowO4g.png);
   background-size: cover;
   background-position: center;
@@ -147,34 +152,17 @@ button:hover {
 }
 .followUs {
   background-color: #222;
-  display: flex;
 }
-.followUs div {
-  display: flex;
-  align-items: center;
-  margin: auto;
-}
-.followUs img {
-  height: 40px;
-}
-.followUs h2 {
-  padding-bottom: 4px;
-}
-.followUs a {
-  padding: 0;
-  margin: 0;
-}
-#ytlogo {
-  height: 60px;
-  padding-top: 3px;
-  margin-left: 40px;
-}
-#dclogo {
-  padding-top: 5px;
-}
-#ttlogo {
-  padding-top: 3px;
-  margin-left: 46px;
+.fa {
+  padding: 8px;
+  font-size: 30px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin: 15px 0px 15px 15px;
+  background: #fff;
+  color: black;
 }
 iframe {
   width: 50vw;
@@ -209,6 +197,11 @@ iframe {
   margin: auto;
   box-shadow: #000 0 0 40px;
 }
+@media only screen and (max-width: 500px) {
+  .faImg img {
+    width: 200px;
+  }
+}
 .fanArtImg {
   visibility: hidden;
 }
@@ -237,7 +230,14 @@ iframe {
 .faArrowRight {
   transform: translateX(calc(-50vw + 250px));
 }
-
+@media only screen and (max-width: 500px) {
+  .faArrowLeft {
+    transform: translateX(calc(50vw - 160px));
+  }
+  .faArrowRight {
+    transform: translateX(calc(-50vw + 160px));
+  }
+}
 
 #Version {
   font-size: 10px;
