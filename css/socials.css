@@ -1,0 +1,112 @@
+body {
+  background-color: #2C2F33;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+h1 {
+  font-family: 'PT Sans';
+  color: #fff;
+  font-size: 20px;
+}
+h2 {
+  font-family: 'PT Sans';
+  color: #fff;
+  margin: 0;
+}
+h3 {
+  color: #fff;
+  font-family: "PT Sans";
+  display: flex;
+  align-self: center;
+}
+p {
+  color: #fff;
+  font-family: 'PT Sans';
+  font-size: 16px;
+}
+button {
+  transform: translateY(0);
+  cursor: no-drop;
+  transition: 0.1s;
+  background-color: #ffffff;
+}
+button:active {
+  transform: translateY(2px);
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  cursor: no-drop;
+}
+
+.head {
+  z-index: 2;
+  background-color: #7289DA;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+.headTitle {
+  margin-right: auto;
+}
+.logo {
+  height: 70px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+.menuIcon {
+  height: 30px;
+  transition: 0.2s;
+  margin-left: 20px;
+  position: absolute;
+}
+.menuIcon:active {
+  transform: rotateZ(90deg);
+}
+.menuIcon:hover {
+  cursor: pointer;
+}
+.menuBar {
+  z-index: 1;
+  transition: 0.5s;
+  position: absolute;
+  margin: 10px;
+}
+@media screen and (max-width: 500px) {
+  .menuBar {
+    visibility: hidden;
+  }
+}
+.menuBar button {
+  background-color: #7289DA;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 10px;
+  margin-right: 5px;
+}
+.menuBar h2 {
+  color: #fff;
+}
+.menuBar button:hover {
+  background-color: #FF551A;
+  box-shadow: #FF551A 0px 0px 15px;
+}
+
+.content {
+  display: flex;
+}
+.title {
+  margin-top: 100px;
+  width: 100vw;
+}
+.discord {
+  box-shadow: #000 0px 0px 50px;
+  margin: auto;
+}
