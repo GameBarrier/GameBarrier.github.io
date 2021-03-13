@@ -1,8 +1,9 @@
 body {
-  background-color: #2C2F33;
+  background-color: #23272A;
   padding: 0;
   margin: 0;
   border: 0;
+  height: 200vh;
 }
 h1 {
   font-family: 'PT Sans';
@@ -17,8 +18,7 @@ h2 {
 h3 {
   color: #fff;
   font-family: "PT Sans";
-  display: flex;
-  align-self: center;
+  font-size: 30px;
 }
 p {
   color: #fff;
@@ -40,7 +40,15 @@ button:focus {
 button:hover {
   cursor: no-drop;
 }
-
+.mouseLight {
+  background-color: #fff;
+  position: absolute;
+  z-index: -5;
+  box-shadow: 0px 0px 0px 150px #7289DA;
+  filter: blur(150px);
+  margin-top: 50vh;
+  margin-left: 50vw;
+}
 .head {
   z-index: 2;
   background-color: #7289DA;
@@ -73,8 +81,7 @@ button:hover {
 .menuBar {
   z-index: 1;
   transition: 0.5s;
-  position: absolute;
-  margin: 10px;
+  position: static;
 }
 @media screen and (max-width: 500px) {
   .menuBar {
@@ -90,6 +97,7 @@ button:hover {
   padding-right: 10px;
   font-size: 10px;
   margin-right: 5px;
+  margin-top: 10px;
 }
 .menuBar h2 {
   color: #fff;
@@ -98,15 +106,17 @@ button:hover {
   background-color: #FF551A;
   box-shadow: #FF551A 0px 0px 15px;
 }
-
 .content {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menuBarButtons {
+  margin-left: 10px;
 }
 .title {
-  margin-top: 100px;
-  width: 100vw;
-}
-.discord {
-  box-shadow: #000 0px 0px 50px;
-  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
