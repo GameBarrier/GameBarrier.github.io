@@ -40,15 +40,6 @@ button:focus {
 button:hover {
   cursor: no-drop;
 }
-.mouseLight {
-  background-color: #fff;
-  position: absolute;
-  z-index: -5;
-  box-shadow: 0px 0px 0px 150px #7289DA;
-  filter: blur(150px);
-  margin-top: 50vh;
-  margin-left: 50vw;
-}
 .head {
   z-index: 2;
   background-color: #7289DA;
@@ -119,4 +110,7 @@ button:hover {
   margin-bottom: 50px;
   width: 100%;
   text-align: center;
+}
+.discord {
+  box-shadow: 0 0 100px rgba(114,137,218, 0.5);
 }
