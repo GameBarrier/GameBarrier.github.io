@@ -3,8 +3,8 @@ async function dc_main() {
   var ypos = 0;
   var count = 0;
   var sin = 0;
-  var speed = 0.1;
-  var amp = 5
+  var speed = 0.08;
+  var amp = 10
 
   var dc_embed = document.getElementById('discord');
 
