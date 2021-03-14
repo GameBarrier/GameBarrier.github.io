@@ -12,7 +12,7 @@ async function dc_main() {
 
     count++;
     sin = Math.sin(count * speed);
-    ypos = sin * amp;
+    ypos = (sin * amp);
 
     dc_embed.style.transform = "translateY(" + ypos + "px)";
     await sleep(50);
