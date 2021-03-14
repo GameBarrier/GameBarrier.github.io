@@ -32,7 +32,7 @@ window.addEventListener('wheel', function(event) {
           ttEnd = false;
           twEnd = false;
           console.log(twEnd);
-          document.querySelector(".SocialsTW").style.transition = "1s";
+          document.querySelector(".SocialsTW").style.transition = "0.5s";
           document.querySelector(".SocialsTW").style.transform = "translate(" + transTW +"vw, -200vh)";
         }
       } else if (transTT < 101) {
@@ -41,7 +41,7 @@ window.addEventListener('wheel', function(event) {
           ttEnd = false;
           twEnd = false;
           console.log(ttEnd);
-          document.querySelector(".SocialsTT").style.transition = "1s";
+          document.querySelector(".SocialsTT").style.transition = "0.5s";
           document.querySelector(".SocialsTT").style.transform = "translate(" + transTT +"vw, -100vh)";
         }
       } else {
@@ -59,7 +59,7 @@ window.addEventListener('wheel', function(event) {
           ttEnd = false;
           twEnd = false;
           console.log(ttEnd);
-          document.querySelector(".SocialsTT").style.transition = "1s";
+          document.querySelector(".SocialsTT").style.transition = "0.5s";
           document.querySelector(".body").style.overflowY = "hidden";
           document.querySelector(".SocialsTT").style.transform = "translate(" + transTT +"vw, -100vh)";
         }
@@ -73,7 +73,7 @@ window.addEventListener('wheel', function(event) {
             ttEnd = false;
             twEnd = false;
             console.log(twEnd);
-            document.querySelector(".SocialsTW").style.transition = "1s";
+            document.querySelector(".SocialsTW").style.transition = "0.5s";
             document.querySelector(".body").style.overflowY = "hidden";
             document.querySelector(".SocialsTW").style.transform = "translate(" + transTW +"vw, -200vh)";
           }
