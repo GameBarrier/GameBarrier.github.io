@@ -33,7 +33,6 @@ p {
 }
 button {
   transform: translateY(0);
-  cursor: no-drop;
   transition: 0.1s;
   background-color: #ffffff;
 }
@@ -44,7 +43,7 @@ button:focus {
   outline: none;
 }
 button:hover {
-  cursor: no-drop;
+  cursor: pointer;
 }
 .head {
   z-index: 2;
