@@ -1,0 +1,112 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #333333;
+}
+h1 {
+  font-family: 'PT Sans';
+  color: #fff;
+  margin: 0;
+  font-size: 7vw;
+}
+h2 {
+  font-family: 'PT Sans';
+  color: #fff;
+  margin: 0;
+  font-size: 5vw;
+}
+.header {
+  margin-top: 10vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header h1 {
+  transform: translateY(-10px);
+}
+
+.logo_m {
+  width: 20vw;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10vw;
+}
+
+.content button {
+  width: 80vw;
+  height: 20vw;
+  border: none;
+  border-radius: 5vw;
+  background-color: #fff;
+  margin-bottom: 5vw;
+  transition: 0.1s;
+}
+
+#btn_yt {
+  background-color: #FF0000;
+}
+#btn_yt h2 {
+  color: #fff;
+}
+#btn_dc {
+  background-color: #7289DA;
+}
+#btn_dc h2 {
+  color: #fff;
+}
+#btn_tt {
+  background-color: #ff0050;
+}
+#btn_tt h2 {
+  color: #000000;
+}
+#btn_ig {
+  background-image: url("https://i.imgur.com/a2qlG8G.png");
+  background-size: cover;
+}
+#btn_ig h2 {
+  color: #fff;
+}
+#btn_tw {
+  background-color: #1DA1F2;
+  background-size: cover;
+}
+#btn_tw h2 {
+  color: #fff;
+}
+#btn_web {
+  background-color: #FF551A;
+}
+#btn_web h2 {
+  color: #fff;
+}
+
+.content button:focus {
+  outline: none;
+}
+.content button:active {
+  filter: brightness(50%);
+  transform: translateY(5px);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fff; /* safari still uses vendor prefix */
+  text-decoration-color: #fff;
+  font-family: 'PT Sans';
+}
+
+.footer p {
+  color: #fff;
+}

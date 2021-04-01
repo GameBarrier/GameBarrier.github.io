@@ -5,35 +5,6 @@ body {
   border: 0;
 }
 
-.phoneVersion {
-  visibility: hidden;
-  position: absolute;
-  width: 100%;
-}
-.phoneVersion h1 {
-  color: #fff;
-  margin: 0;
-  margin-left: 40px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  padding-right: 40px;
-}
-.phoneVersion a {
-  width: 100%;
-  padding: 40px;
-  color: #fff;
-  font-family: 'PT Sans';
-}
-
-@media screen and (max-width: 700px) {
-  .pcVersion {
-    visibility: hidden;
-  }
-  .phoneVersion {
-    visibility: visible;
-  }
-}
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
