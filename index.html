@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="favicon.ico">
     <title>Game Barrier - Indie Game Development Team</title>
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,18 +30,20 @@
 
   </head>
   <body onload="imgR()" id="bodyID">
-    <div class="head">
-      <img onclick="menu()" class="menuIcon" src="mainPage/Menu.png" alt="">
-      <img class="logo" src="https://i.imgur.com/FJBn4Bu.png" alt="">
-      <h1 class="headTitle">Game Barrier</h1>
+    <div class="HeadBar" onmouseover="openHeadBar()">
+      <div class="head">
+        <img onclick="menu()" class="menuIcon" src="mainPage/Menu.png" alt="">
+        <img class="logo" src="https://i.imgur.com/FJBn4Bu.png" alt="">
+        <h1 class="headTitle">Game Barrier</h1>
+      </div>
+      <div class="menuBar">
+        <button type="button" name="Projects"><h2>Projects</h2></button>
+        <button type="button" name="SocialMedia" onclick="location.href='socials.html'"><h2>Social Media</h2></button>
+        <a href="https://shop.game-barrier.games"><button type="button" name="Shop"><h2>Shop</h2></button></a>
+        <button type="button" onclick="location.href='apply.html'" name="Apply"><h2>Apply</h2></button>
+      </div>
     </div>
-    <div class="menuBar">
-      <button type="button" name="Projects"><h2>Projects</h2></button>
-      <button type="button" name="SocialMedia" onclick="location.href='socials.html'"><h2>Social Media</h2></button>
-      <a href="https://shop.game-barrier.games"><button type="button" name="Shop"><h2>Shop</h2></button></a>
-      <button type="button" onclick="location.href='apply.html'" name="Apply"><h2>Apply</h2></button>
-    </div>
-    <div class="body">
+    <div class="body" onmouseover="closeHeadBar()">
       <section class="Banner">
         <video id="bannerVideo" muted autoplay plays-inline loop>
           <source type="video/mp4" src="vids/dl5teaser.mp4"/>
@@ -55,32 +58,44 @@
         </button>
       </section>
       <section class="FanArt">
-        <div>
-            <h2 id="faTitle">Community Art <3</h2>
-            <p>Some of our community's work.</p>
-        </div>
-        <div class="faImg">
-          <div class="faArrowLeft" id="faArrow">
-            <img src="mainPage/arrowL.png" alt="" onclick="imgL()">
+        <div class="fa">
+          <div>
+              <h2 id="faTitle">Community Art <3</h2>
+              <p>Some of our community's work.</p>
           </div>
-          <img src="fanArt/01-min.jpg" alt="" id="fa01" class="fanArtImg">
-          <img src="fanArt/02-min.png" alt="" id="fa02" class="fanArtImg">
-          <img src="fanArt/03-min.jpeg" alt="" id="fa03" class="fanArtImg">
-          <div class="faArrowRight" id="faArrow">
-            <img src="mainPage/arrowR.png" alt="" onclick="imgR()">
+          <div class="faImg">
+            <div class="faArrowLeft" id="faArrow">
+              <img src="mainPage/arrowL.png" alt="" onclick="imgL()">
+            </div>
+            <img src="fanArt/01-min.jpg" alt="" id="fa01" class="fanArtImg">
+            <img src="fanArt/02-min.png" alt="" id="fa02" class="fanArtImg">
+            <img src="fanArt/03-min.jpeg" alt="" id="fa03" class="fanArtImg">
+            <div class="faArrowRight" id="faArrow">
+              <img src="mainPage/arrowR.png" alt="" onclick="imgR()">
+            </div>
           </div>
-        </div>
-        <div class="FanArtDesc">
-          <p id="faCredit">Made by Meii</p>
+          <div class="FanArtDesc">
+            <p id="faCredit">Made by Meii</p>
+          </div>
         </div>
       </section>
       <section class="FAQ">
         <h2>What is Invadence?</h2>
-        <p>Currently we are working on our first project "Invadence". Invadence will be an open-world exploration game set on Mars. The concept is simple, you have landed on the planet with a spaceship and now you have to try to escape. You'll have to collect the parts to repair the spaceship that you crashed. However, this quickly becomes a challenge. You can find more details about this on our YouTube channel.</p>
+        <p>Currently we are working on our first project Invadence. Invadence will be an open-world exploration game set on Mars. The concept is simple, you have landed on the planet with a spaceship and now you have to try to escape. You'll have to collect the parts to repair the spaceship that you crashed. However, this quickly becomes a challenge. You can find more details about this on our YouTube channel.</p>
       </section>
-      <p id="Version" onclick="lol()">Contact: gamebarriergames@gmail.com | Discord: discord.gg/gfjRsCU </p>
     </div>
     <script src="javaScript/slsh.js" charset="utf-8"></script>
     <script src="javaScript/important.js" charset="utf-8"></script>
   </body>
+  <footer>
+    <div class="copyright">
+      <h3>Copyright</h3>
+      <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://game-barrier.games">The Game Barrier website</a> is licensed under <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NonCommercial-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+    </div>
+    <div class="legal">
+      <h3>Legal</h3>
+      <p><a href="privacy.html">Privacy Policy</a></p>
+      <p><a href="mailto:gamebarriergames@gmail.com">Contact</a></p>
+    </div>
+  </footer>
 </html>

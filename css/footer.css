@@ -1,0 +1,40 @@
+footer {
+  background-color: #111;
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+h3 {
+  color: #fff;
+  font-family: "PT Sans";
+  font-size: 20px;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  font-family: 'PT Sans';
+}
+
+p {
+  color: #fff;
+  font-family: 'PT Sans';
+  margin: 10px 0 0 0;
+}
+
+.copyright {
+  max-width: 50%;
+  padding-right: 40px;
+}
+
+@media only screen and (max-width: 500px) {
+  footer {
+    flex-direction: column;
+  }
+  .copyright {
+    margin-bottom: 40px;
+    padding: 0;
+    max-width: 100%;
+  }
+}
