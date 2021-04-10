@@ -14,30 +14,3 @@ function menu() {
     document.querySelector(".menuBar").style.visibility = "hidden";
   }
 }
-
-let scrollY = 0;
-
-document.addEventListener('scroll', function(e) {
-
-  if (scrollY < window.scrollY) {
-    closeHeadBar();
-  }
-
-  scrollY = window.scrollY;
-
-  if (scrollY < 200) {
-    openHeadBar();
-  }
-});
-
-function closeHeadBar() {
-  if (scrollY != 0) {
-    document.querySelector(".HeadBar").style.transform = "translateY(-70px)";
-    document.querySelector(".HeadBar").style.transition = "1s";
-  }
-}
-
-function openHeadBar() {
-  document.querySelector(".HeadBar").style.transform = "translateY(0px)";
-  document.querySelector(".HeadBar").style.transition = "0.4s";
-}
