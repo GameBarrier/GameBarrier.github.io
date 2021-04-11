@@ -63,6 +63,7 @@ button:focus {
 }
 button:hover {
   cursor: pointer;
+  filter: brightness(120%);
 }
 .HeadBar {
   position: fixed;

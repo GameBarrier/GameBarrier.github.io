@@ -177,11 +177,15 @@ button:hover {
   background-color: #222;
 }
 .About button {
-  background-color: #fff;
+  background-color: #7289DA;
+  color: #fff;
   border: none;
   border-radius: 20px;
   height: 30px;
-  width: 80px;
+  width: 120px;
+}
+.About button:hover {
+  filter: brightness(120%);
 }
 .followUs {
   background-color: #333;
