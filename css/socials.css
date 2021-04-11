@@ -63,6 +63,14 @@ button:focus {
 button:hover {
   cursor: pointer;
 }
+.HeadBar {
+  position: fixed;
+  height: 200px;
+  width: 100%;
+  z-index: 5;
+  transform: translateY(0px);
+  transition: 1s;
+}
 .head {
   z-index: 4;
   background-color: #7289DA;
@@ -171,6 +179,7 @@ button:hover {
   height: 30px;
   width: 80px;
   color: #fff;
+  margin-top: 20px;
 }
 .box2 {
   display: flex;
