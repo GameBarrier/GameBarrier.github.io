@@ -74,7 +74,7 @@ button:hover {
   transition: 1s;
 }
 .head {
-  z-index: 4;
+  z-index: 6;
   background-color: #7289DA;
   display: flex;
   flex-direction: row;
@@ -294,7 +294,7 @@ button:hover {
 .SocialsTW {
   display: grid;
   height: 100vh;
-  z-index: 6;
+  z-index: 4;
   grid-template-rows: 100vh;
   grid-template-columns: 50% 50%;
   width: 100%;
