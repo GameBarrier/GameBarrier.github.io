@@ -50,6 +50,7 @@ button {
   transform: translateY(0);
   transition: 0.1s;
   background-color: #ffffff;
+  margin-top: 10px;
 }
 button::selection {
   background: rgba(0,0,0,0);
@@ -179,7 +180,6 @@ button:hover {
   height: 30px;
   width: 80px;
   color: #fff;
-  margin-top: 20px;
 }
 .box2 {
   display: flex;
