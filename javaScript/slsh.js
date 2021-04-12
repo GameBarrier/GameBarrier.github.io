@@ -17,46 +17,38 @@ function countIndex(direc) {
     } else {
       imgIndex--;
     }
-    console.log(imgIndex);
   } else {
     if (imgIndex == imgLenght) {
       imgIndex = 0;
     } else {
       imgIndex++;
     }
-    console.log(imgIndex);
   }
 }
 
 function imgL() {
-  console.log("L");
   countIndex(0);
   for (var i = 0; i <= imgLenght; i++) {
     if (i != imgIndex) {
       imgs[i].style.visibility = "hidden";
       imgs[i].style.position = "absolute";
-      console.log("hidden");
     } else {
       imgs[i].style.visibility = "visible";
       imgs[i].style.position = "static";
-      console.log("visible");
       document.getElementById("faCredit").innerHTML = imgDesc[i];
     }
   }
 }
 
 function imgR() {
-  console.log("R");
   countIndex(1);
   for (var i = 0; i <= imgLenght; i++) {
     if (i != imgIndex) {
       imgs[i].style.visibility = "hidden";
       imgs[i].style.position = "absolute";
-      console.log("hidden");
     } else {
       imgs[i].style.visibility = "visible";
       imgs[i].style.position = "static";
-      console.log("visible");
       document.getElementById("faCredit").innerHTML = imgDesc[i];
     }
   }

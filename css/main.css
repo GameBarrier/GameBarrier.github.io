@@ -141,31 +141,20 @@ button:hover {
   box-shadow: #FF551A 0px 0px 15px;
 }
 
-
-
 .Banner {
-  display: flex;
+  background-color: #111;
 }
-.Banner p{
-  font-family: 'Carrois Gothic SC';
+
+.Banner p {
+  position: absolute;transform: translateY(calc(60vh - 40px));
+  padding-left: 10px;
 }
+
 .Banner div {
-  background-color: rgba(0, 0, 0, 0.5)
-}
-.Banner h1 {
-  font-size: 30px;
-}
-@media only screen and (max-width: 500px) {
-  .Banner h1 {
-    font-size: 20px;
-  }
-}
-.Banner video {
-  margin-top: 70px;
+  height: 60vh;
   width: 100%;
+  overflow: hidden;
 }
-
-
 
 .About {
   position: static;
@@ -173,7 +162,6 @@ button:hover {
   padding: 40px;
   background-size: cover;
   background-position: center;
-  box-shadow: #000 0px 0px 40px;
   background-color: #222;
 }
 .About button {
