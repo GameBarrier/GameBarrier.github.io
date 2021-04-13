@@ -159,7 +159,7 @@ button:hover {
 }
 #loadingIcon {
   position: absolute;
-  z-index: 100;
+  z-index: 3;
   align-self: center;
   margin-top: 30vh;
   animation: rotation 2s infinite linear;
