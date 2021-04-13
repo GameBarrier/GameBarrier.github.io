@@ -143,8 +143,9 @@ button:hover {
 
 .Banner {
   background-color: #111;
+  display: flex;
+  flex-direction: column;
 }
-
 .Banner p {
   position: absolute;transform: translateY(calc(60vh - 40px));
   padding-left: 10px;
@@ -154,6 +155,21 @@ button:hover {
   height: 60vh;
   width: 100%;
   overflow: hidden;
+}
+#loadingIcon {
+  position: absolute;
+  z-index: 100;
+  align-self: center;
+  margin-top: 30vh;
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
 }
 
 .About {
