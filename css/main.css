@@ -213,6 +213,11 @@ iframe {
     width: 100%;
     height: 700px;
 }
+@media only screen and (max-width: 500px) {
+  .FanArt {
+    height: 500px;
+  }
+}
 .FanArt h2 {
   text-align: center;
   font-size: 30px;
@@ -224,6 +229,7 @@ iframe {
 .fa {
   margin-top: auto;
   margin-bottom: auto;
+  transform: translateY(15px);
 }
 .faImg {
   width: 100%;
