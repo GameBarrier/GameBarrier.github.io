@@ -380,11 +380,9 @@ iframe {
 #TeaserVideo {
   width: 100%;
   margin: 0;
-  position: absolute;
   z-index: -1;
 }
 .TeaserVideo {
-  height: 50vh;
   overflow: hidden;
   display: flex;
   flex-direction: row;
