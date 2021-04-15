@@ -30,7 +30,7 @@
     </script>
 
   </head>
-  <body onload="imgR()" id="bodyID">
+  <body onload="imgR(); enableNavArrow()" id="bodyID">
     <div class="HeadBar">
       <div class="head">
         <img onclick="menu()" class="menuIcon" src="mainPage/Menu.png" alt="">
@@ -63,13 +63,14 @@
           </div>
           <div class="faImg">
             <div class="faArrowLeft" id="faArrow">
-              <img src="mainPage/arrowL.png" alt="" onclick="imgL()">
+              <img src="mainPage/arrowL.png" alt="" onclick="imgL()" class="faArrowImg">
             </div>
             <img src="fanArt/01-min.jpg" alt="" id="fa01" class="fanArtImg">
             <img src="fanArt/02-min.png" alt="" id="fa02" class="fanArtImg">
             <img src="fanArt/03-min.jpeg" alt="" id="fa03" class="fanArtImg">
+            <img src="fanArt/04-min.png" alt="" id="fa04" class="fanArtImg">
             <div class="faArrowRight" id="faArrow">
-              <img src="mainPage/arrowR.png" alt="" onclick="imgR()">
+              <img src="mainPage/arrowR.png" alt="" onclick="imgR()" class="faArrowImg">
             </div>
           </div>
           <div class="FanArtDesc">
@@ -80,6 +81,14 @@
       <section class="FAQ">
         <h2>What is Invadence?</h2>
         <p>Currently we are working on our first project Invadence. Invadence will be an open-world exploration game set on Mars. The concept is simple, you have crash-landed on the planet with a spaceship and now you have to try to escape. You'll have to collect the parts to repair the spaceship that you crashed. However, this quickly becomes a challenge. You can find more details about this on our <a href="https://www.youtube.com/c/GameBarrierYT">YouTube channel</a>.</p>
+      </section>
+      <section class="TeaserVideo">
+        <video src="https://i.imgur.com/7PhzA4M.mp4" autoplay poster="posterimage.jpg" id="TeaserVideo" muted></video>
+      </section>
+      <section class="News">
+        <h2>Watch our latest devlog!</h2>
+        <p>In this indie game devlog, we talked about how we completely overhauled our terrain and most of the code for our game Invadence, as well as adding loads of new features!</p>
+        <iframe src="https://www.youtube-nocookie.com/embed/CfwTnXbPCow" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </section>
     </div>
     <script src="javaScript/slsh.js" charset="utf-8"></script>

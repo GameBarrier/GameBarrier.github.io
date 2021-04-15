@@ -4,28 +4,23 @@ body {
   margin: 0;
   border: 0;
 }
-
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
   display: none;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #000000;
 }
-
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #2C2F33;
 }
-
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #23272A;
 }
-
 h1 {
   font-family: 'PT Sans';
   color: #fff;
@@ -47,38 +42,59 @@ p {
   font-size: 16px;
 }
 button {
-  transform: translateY(0);
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
   transition: 0.1s;
   background-color: #ffffff;
   margin-top: 10px;
+}
+button::-moz-selection {
+  background: rgba(0,0,0,0);
 }
 button::selection {
   background: rgba(0,0,0,0);
 }
 button:active {
-  transform: translateY(2px);
+  -webkit-transform: translateY(2px);
+      -ms-transform: translateY(2px);
+          transform: translateY(2px);
 }
 button:focus {
   outline: none;
 }
 button:hover {
   cursor: pointer;
-  filter: brightness(120%);
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
 }
 .HeadBar {
   position: fixed;
   height: 200px;
   width: 100%;
   z-index: 5;
-  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
   transition: 1s;
 }
 .head {
   z-index: 6;
   background-color: #7289DA;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 100%;
 }
@@ -95,17 +111,23 @@ button:hover {
 }
 .menuIcon {
   height: 30px;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
   transition: 0.2s;
   margin-left: 20px;
   position: absolute;
 }
 .menuIcon:active {
-  transform: rotateZ(90deg);
+  -webkit-transform: rotateZ(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotateZ(90deg);
 }
 .menuIcon:hover {
   cursor: pointer;
 }
 .menuBar {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
   position: relative;
   z-index: 3;
@@ -126,7 +148,13 @@ button:hover {
   margin-right: 5px;
   margin-top: 10px;
 }
+.menuBar h2::-moz-selection {
+  background: rgba(0,0,0,0);
+}
 .menuBar h2::selection {
+  background: rgba(0,0,0,0);
+}
+.menuBar div::-moz-selection {
   background: rgba(0,0,0,0);
 }
 .menuBar div::selection {
@@ -137,7 +165,8 @@ button:hover {
 }
 .menuBar button:hover {
   background-color: #FF551A;
-  box-shadow: #FF551A 0px 0px 15px;
+  -webkit-box-shadow: #FF551A 0px 0px 15px;
+          box-shadow: #FF551A 0px 0px 15px;
 }
 .menuBarButtons {
   margin-left: 10px;
@@ -149,22 +178,41 @@ button:hover {
   background-size: cover;
   height: 100vh;
   width: 100%;
-  filter: blur(20px) brightness(100%) saturate(0%);
+  -webkit-filter: blur(20px) brightness(100%) saturate(0%);
+          filter: blur(20px) brightness(100%) saturate(0%);
   position: relative;
   z-index: -1;
 }
 .content {
   position: absolute;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100vh;
   grid-template-rows: 100vh;
   width: 100%;
   z-index: 0;
 }
+.content > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.content > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
 .box1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
@@ -183,14 +231,22 @@ button:hover {
   color: #fff;
 }
 .box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: calc(100vh - 70px);
   margin-top: 70px;
 }
 .discord {
-  box-shadow: 0 0 100px 50px rgba(114,137,218, 0.4);
+  -webkit-box-shadow: 0 0 100px 50px rgba(114,137,218, 0.4);
+          box-shadow: 0 0 100px 50px rgba(114,137,218, 0.4);
   margin-right: auto;
   margin-left: auto;
 }
@@ -205,16 +261,34 @@ button:hover {
 .SocialsYT {
   height: 100vh;
   z-index: 3;
+  display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 100vh;
   grid-template-rows: 100vh;
+  -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 100%;
   background-color: #fff;
 }
+.SocialsYT > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.SocialsYT > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
 .socYTBox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 40px;
 }
 .socYTBox1 p {
@@ -236,9 +310,16 @@ button:hover {
   margin-right: auto;
 }
 .socYTBox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .socYTBox2 iframe {
   width: 40vw;
@@ -249,19 +330,39 @@ button:hover {
   margin-right: auto;
 }
 .SocialsTT {
+  display: -ms-grid;
   display: grid;
   height: 100vh;
   z-index: 4;
+  -ms-grid-rows: 100vh;
   grid-template-rows: 100vh;
+  -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 100%;
-  transform: translate(101vw, -100vh);
+  -webkit-transform: translate(101vw, -100vh);
+      -ms-transform: translate(101vw, -100vh);
+          transform: translate(101vw, -100vh);
   background-color: #fff;
 }
+.SocialsTT > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.SocialsTT > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
 .socTTBox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 40px;
 }
 .socTTBox1 h2 {
@@ -283,28 +384,55 @@ button:hover {
   margin-right: auto;
 }
 .socTTBox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .socTTBox2 blockquote {
   margin-left: auto;
   margin-right: auto;
 }
 .SocialsTW {
+  display: -ms-grid;
   display: grid;
   height: 100vh;
   z-index: 4;
+  -ms-grid-rows: 100vh;
   grid-template-rows: 100vh;
+  -ms-grid-columns: 50% 50%;
   grid-template-columns: 50% 50%;
   width: 100%;
-  transform: translate(101vw, -200vh);
+  -webkit-transform: translate(101vw, -200vh);
+      -ms-transform: translate(101vw, -200vh);
+          transform: translate(101vw, -200vh);
   background-color: #fff;
 }
+.SocialsTW > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.SocialsTW > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
 .socTWBox1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 40px;
 }
 .socTWBox1 h2 {
@@ -326,9 +454,16 @@ button:hover {
   margin-right: auto;
 }
 .socTWBox2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   max-width: 40vw;
 }
 .socTWBox2 blockquote {
@@ -339,16 +474,33 @@ button:hover {
   position: absolute;
   z-index: 10;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
-  transform: translateY(calc(100vh - 50px));
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translateY(calc(100vh - 50px));
+      -ms-transform: translateY(calc(100vh - 50px));
+          transform: translateY(calc(100vh - 50px));
 }
 .scrollArrow img {
   width: 35px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
   transition: 0.5s;
 }
+.scrollArrow img::-moz-selection {
+  background: rgba(0,0,0,0);
+}
 .scrollArrow img::selection {
+  background: rgba(0,0,0,0);
+}
+.scrollArrows::-moz-selection {
   background: rgba(0,0,0,0);
 }
 .scrollArrows::selection {
@@ -358,8 +510,10 @@ button:hover {
   cursor: pointer;
 }
 #socialScrollArrowLeft {
-  filter: opacity(30%);
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
 }
 #socialScrollArrowRight {
-  filter: opacity(70%);
+  -webkit-filter: opacity(70%);
+          filter: opacity(70%);
 }
