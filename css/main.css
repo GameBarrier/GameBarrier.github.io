@@ -373,6 +373,9 @@ iframe {
   padding: 40px;
   background-color: #222;
 }
+.FAQ p {
+  max-width: 800px;
+}
 #TeaserVideo {
   width: 100%;
   margin: 0;
@@ -383,6 +386,7 @@ iframe {
   display: flex;
   flex-direction: row;
   align-items: center;
+  max-height: 300px;
 }
 .News {
   padding: 40px;
