@@ -74,9 +74,6 @@ button:focus {
 button:hover {
   cursor: pointer;
 }
-
-
-
 .HeadBar {
   position: fixed;
   width: 100%;
@@ -88,7 +85,6 @@ button:hover {
   -o-transition: 1s;
   transition: 1s;
 }
-
 .head {
   z-index: 2;
   background-color: #333333;
@@ -310,6 +306,7 @@ iframe {
 }
 .fanArtImg {
   visibility: hidden;
+  height: 100%;
 }
 .FanArtDesc p{
   margin: 10px;
