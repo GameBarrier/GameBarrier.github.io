@@ -5,7 +5,7 @@ var img04 = document.getElementById("fa04");
 var desc01 = "Art by Baronu3 (www.instagram.com/baronu3/)";
 var desc02 = "Art by Meii";
 var desc03 = "Art by Pixy";
-var desc04 = "Merch design by Meii <3";
+var desc04 = "Merch design by Meii <3 (shop.game-barrier.games)";
 
 var imgs = [img01, img02, img03, img04];
 var imgDesc = [desc01, desc02, desc03, desc04];

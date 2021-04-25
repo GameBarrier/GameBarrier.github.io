@@ -231,6 +231,15 @@ button:hover {
   background-size: cover;
   background-position: center;
   background-color: #222;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.About h2 {
+  text-align: center;
+}
+.About p {
+  text-align: center;
 }
 .About button {
   background-color: #7289DA;
@@ -239,6 +248,7 @@ button:hover {
   border-radius: 20px;
   height: 30px;
   width: 120px;
+  margin-top: 20px;
 }
 .About button:hover {
   -webkit-filter: brightness(120%);
@@ -372,9 +382,22 @@ iframe {
 .FAQ {
   padding: 40px;
   background-color: #222;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.FAQ h2 {
+  text-align: center;
+}
+#FAQ_SecondHead {
+  margin-top: 20px;
 }
 .FAQ p {
   max-width: 800px;
+  text-align: center;
+}
+#FAQ_Link {
+  margin-top: 20px;
 }
 #TeaserVideo {
   width: 100%;
