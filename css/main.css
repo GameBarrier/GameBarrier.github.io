@@ -186,8 +186,10 @@ button:hover {
   height: 60vh;
 }
 .Banner p {
-  position: absolute;-webkit-transform: translateY(calc(60vh - 40px));-ms-transform: translateY(calc(60vh - 40px));transform: translateY(calc(60vh - 40px));
+  position: absolute;-webkit-transform: translateY(calc(60vh - 35px));-ms-transform: translateY(calc(60vh - 35px));transform: translateY(calc(60vh - 35px));
   padding-left: 10px;
+  font-size: 12px;
+  color: #888;
 }
 .Banner div {
   height: 60vh;
